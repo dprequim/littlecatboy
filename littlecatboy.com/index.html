@@ -18,6 +18,7 @@
   <meta name="twitter:title" content="LittleCatBoy" />
   <meta name="twitter:description" content="LittleCatBoy" />
   <link rel="stylesheet" href="hello.css" />
+  <link rel="stylesheet" href="additional.css" />
   <link rel="preload" href="_next/static/css/44e7987b939d333f9e07.css" as="style" />
   <link rel="stylesheet" href="_next/static/css/44e7987b939d333f9e07.css" data-n-g="" />
   <link rel="preload" href="_next/static/css/17597d3694d41727ad30.css" as="style" />
@@ -2989,7 +2990,9 @@
 
           <style data-emotion="css 1bdgapz">
             .css-1bdgapz {
-              background: #003700;
+              background: /*#003700*/;
+              transform-style: inherit;
+              background: 50% 50% / cover;
               position: relative;
             }
 
@@ -3010,6 +3013,27 @@
               transform: scaleX(-1);
               -webkit-transform: scaleX(-1);
               z-index:-100;
+            }
+
+            .css-1bdgapz::after {
+              content: '';
+              position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              background-image: url('./images/galaxy.jpg') !important;
+              transform-origin: center center 0;
+              transform: translateZ(-1px) scale(1.03);
+              z-index: 0;
+              display: block;
+              background: 50% 50% / cover;
+              background-attachment: fixed;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              padding-top: 10%;
+              padding-bottom: 10%;
             }
           </style>
           <div class="css-1bdgapz">
@@ -3386,7 +3410,7 @@
 
                         @media screen and (min-width: 768px) {
                           .css-124ju8d {
-                          background: black;
+                          background: #121212e0;
                           }
                         }
                       </style>
@@ -4591,7 +4615,7 @@ GAME REWARDS
               <div class="container">
                 <center>
                   <div class="heading ">
-                    <p style="padding:10px">Use the Pancake integration below to buy directly with BNB.</p>
+                    <h3 style="padding:20px 10px 10px 10px; color: white;">Use the Pancake integration below to buy directly with BNB.</h3>
 
                   </div>
                 </center>
